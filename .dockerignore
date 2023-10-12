@@ -1,0 +1,18 @@
+# Git
+.git
+.gitignore
+
+# Docker
+.docker
+
+# Python
+app/__pycache__/
+app/*/__pycache__/
+app/*/*/__pycache__/
+app/*/*/*/__pycache__/
+.env/
+.venv/
+venv/
+
+# # ========================== code from git
+# # https://github.com/LondonAppDeveloper/c2-recipe-app-api-2/compare/s-05-project-setup-04-create-python-requirements-file...s-05-project-setup-05-create-project-dockerfile

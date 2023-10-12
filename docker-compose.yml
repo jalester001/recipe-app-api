@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+    app:
+        build:
+            context: .
+            args:
+                - DEV=true
+        ports:
+            - "8000:8000"
+        volumes:
+            - ./app:/app
+        command: >
+            sh -c "python manage.py runserver 0.0.0.0:8000"
+
+# 1
+# https://github.com/LondonAppDeveloper/c2-recipe-app-api-2/compare/s-05-project-setup-05-create-project-dockerfile...s-05-project-setup-07-create-docker-compose-config
+
+# 2
+# https://github.com/LondonAppDeveloper/c2-recipe-app-api-2/compare/s-05-project-setup-07-create-docker-compose-config...s-05-project-setup-10-configure-flake8
